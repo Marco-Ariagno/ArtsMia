@@ -47,7 +47,8 @@ public class FXMLController {
     
     @FXML
     void doAnalizzaOggetti(ActionEvent event) {
-
+    	this.model.creaGrafo();
+    	txtResult.appendText(String.format("Grafo creato! %d vertici e %d archi",model.nVertici(),model.nArchi()));
     }
 
     @FXML
